@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { profile } from "../data/portfolio";
-import { Icon } from "./icon";
+import { Icon } from "./ui-icon";
 
 export default function ContactActions() {
   const [message, setMessage] = useState("");

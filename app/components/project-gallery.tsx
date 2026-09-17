@@ -57,15 +57,19 @@ export default function ProjectGallery() {
     }
   }, [showAll]);
 
-  function openProject(project: Project, trigger: HTMLButtonElement) {
-    triggerRef.current = trigger;
-    setSelectedProject(project);
+  useEffect(() => {
+    if (!selectedProject) return;
     if (previousOverflowRef.current === null) {
       previousOverflowRef.current = document.body.style.overflow;
       document.body.style.overflow = "hidden";
     }
-    // O dialog nativo mantém o foco no modal e oferece fechamento pela tecla Escape.
+    // Abre após renderizar o título: leitores de tela recebem o nome do projeto.
     dialogRef.current?.showModal();
+  }, [selectedProject]);
+
+  function openProject(project: Project, trigger: HTMLButtonElement) {
+    triggerRef.current = trigger;
+    setSelectedProject(project);
   }
 
   function restoreAfterClose() {

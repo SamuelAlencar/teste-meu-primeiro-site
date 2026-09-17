@@ -4,7 +4,7 @@ import ProjectGallery from "./components/project-gallery";
 import ScrollEffects from "./components/scroll-effects";
 import Skills from "./components/skills";
 import ContactActions from "./components/contact-actions";
-import { Icon } from "./components/icon";
+import { Icon } from "./components/ui-icon";
 import { courses, education, experiences, profile } from "./data/portfolio";
 
 export default function Home() {
