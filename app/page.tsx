@@ -13,7 +13,7 @@ export default function Home() {
       <main id="conteudo">
         <section className="hero" aria-labelledby="hero-title">
           <span className="eyebrow">UM NOVO COMEÇO</span>
-          <h1 id="hero-title">Lorem Ipsum<span className="title-dot">.</span></h1>
+          <h1 id="hero-title">PRIMEIRA ALTERACAO<span className="title-dot">.</span></h1>
           <p className="intro">Todo grande projeto começa com um primeiro passo.</p>
           <p className="description">
             Este site foi criado para fins educacionais e aprendizado de Next.js.
